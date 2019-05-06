@@ -1,0 +1,89 @@
+.main_wrapper{
+	color: black;
+	font-size: 18px;
+	font-family: "New Times Roman", Arial, Calibri;
+	width: 1200px;
+	height: auto;
+	align-content: center;
+	margin: 10px 25px 5px 100px;
+
+}
+
+fieldset{
+	border: 2px solid orange;
+	border-radius: 1.3em;
+	margin: 10px 10px;
+	padding: 5px 5px;
+	align-content: center;
+	background-color: ivory;
+}
+
+legend{
+	text-align: center;
+	text-shadow: lightblue;
+	color: black;
+}
+
+nav{
+	color: lightgray;
+	font-size: 30px;
+	align-content: center;
+}
+
+nav a{
+	text-decoration: none;
+	color: blue;
+}
+
+nav a:hover{
+	color: green;
+	font-size: 31px;
+}
+
+input{
+	height: 20px;
+	border-color: red;
+	line-height: 0.9em;
+	margin: 2px 50px 2px 300px;
+	padding: 1px 5px;
+
+}
+
+#button{
+	border-color: green;
+	box-sizing: 800px;
+
+}
+hr{
+	opacity: 0.1;
+}
+
+input[type='text']{
+	width: 50%;
+	padding: 4px;
+	border-radius: 5px;
+	border:1px #ccc solid;
+}
+
+input[type='number']{
+	width: 40%;
+	padding: 4px;
+	border-radius: 5px;
+	border:1px #ccc solid;
+}
+
+#first{
+	float: left;
+	height: auto;
+	width: 300px;
+	border-color: skyblue;
+	border-radius: 1.0em;
+}
+
+#second{
+	float: right;
+	height: auto;
+	width: 300px;
+	border-color: skyblue;
+	border-radius: 1.0em;
+}

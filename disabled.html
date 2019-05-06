@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Test Formt</title>
+<script type="text/javascript">
+	function disableOption(){
+		var choice = document.getElementById("selectme").value;
+		var parents = document.getElementById("parents");
+		var gurdian = document.getElementById("gurdian");
+		if(choice == "PARENTS"){
+			if(parents.style.visibility === 'hidden'){
+				parents.style.visibility = 'visible';
+				parents.style.display = 'block';
+				if(gurdian.style.visibility === 'visible'){
+					gurdian.style.visibility = 'hidden';
+					gurdian.style.display = 'none';
+				}
+			}
+		/*document.getElementById("parents").disabled = false;
+			document.getElementById("gurdian").disabled = true;*/
+		}else if(choice == "GURDIAN"){
+			if(gurdian.style.visibility === 'hidden'){
+				gurdian.style.visibility = 'visible';
+				gurdian.style.display = 'block';
+				if(parents.style.visibility === 'visible'){
+					parents.style.visibility = 'hidden';
+					parents.style.display = 'none';
+				}
+			}
+			/*document.getElementById("gurdian").disabled = false;
+			document.getElementById("parents").disabled = true;*/
+		}
+	}
+</script>
+</head>
+<body>
+<form action="">
+	Select a choice:
+	<select name="selectme" id="selectme" onchange="disableOption()"> 
+		<option>Select option</option>
+		<option>PARENTS</option>
+		<option>GURDIAN</option>
+	</select>
+	<br/><br/>
+	<!--TXT FIELDS-->
+	<input type="text" name="parents" value="PARENTS" id="parents" style="visibility:hidden">
+	<br>
+	<input type="text" name="gurdian" value="GURDIAN" id="gurdian" style="visibility:hidden">
+	<br/><br/>
+	<input type="button" value="Submit"/>
+</form>
+</body>
+</html>
